@@ -20,6 +20,6 @@ exports.getAllListes = (req, res, next)=>{
 
 exports.deleteListe = (req,res,next)=>{
     Liste.deleteOne({_id:req.params.id})
-        .then(() => res.status(200).json({message: 'tache supprimée !'}))
+        .then(() => res.status(200).json({message: 'tâche supprimée !'}))
         .catch(error => res.status(400).json({error}))
 };
