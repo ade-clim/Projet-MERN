@@ -9,7 +9,7 @@ const listeRoutes = require('./routes/listeRoute');
 mongoose.connect('mongodb+srv://aureliend:3LdtFUL9sGISGQay@cluster0.pj3be.mongodb.net/test?retryWrites=true&w=majority',
     { useNewUrlParser: true,
         useUnifiedTopology: true })
-    .then(() => console.log('Connexion à MongoDB réussie !'))
+    .then(() => console.log('Connexion à MongoDB réussie'))
 
 
 app.use((req, res, next) => {
